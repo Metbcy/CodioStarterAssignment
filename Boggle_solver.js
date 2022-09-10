@@ -6,11 +6,6 @@
  * @returns {string[]} solutions - Possible solutions to the Boggle board.
  */
  
-let A = 4;
-let B = 4;
-let D=26;
-
-                   
 class TrieTree
 {
     constructor()
@@ -21,6 +16,14 @@ class TrieTree
             this.child[i]=null;
     }
 }
+
+exports.findAllSolutions = function(grid, dictionary) {
+let A = 4;
+let B = 4;
+let D=26;
+
+                   
+
 
 function LWSearch1(root,Key)
 {
@@ -159,7 +162,7 @@ function findAllSolutions(grid,root){
     */
 
 
-
+}
   
 let dictionary = ["ART", "EGO", "GENT", "GET", "NET", "NEW", "NEWT", "PRAT",
 "PRY", "QUA", "QUART", "QUARTZ", "RAT", "TAR", "TARP",
